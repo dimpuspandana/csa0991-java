@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ReverseWord {
+    public static void main(String[] args) {
+        // Create a Scanner object for input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt the user to enter a word
+        System.out.print("Enter a word to reverse: ");
+        String originalString = scanner.nextLine();
+        
+        // Initialize an empty string for the reversed word
+        String reversedString = "";
+        
+        // Loop through the original string in reverse order
+        for (int i = originalString.length() - 1; i >= 0; i--) {
+            reversedString += originalString.charAt(i);
+        }
+        
+        // Output the reversed string
+        System.out.println("Reversed String: " + reversedString);
+        
+        // Close the scanner
+        scanner.close();
+    }
+}
